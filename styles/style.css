@@ -6,7 +6,7 @@
   background: var(--background-gradient);
   -webkit-background-size: cover !important;
   background-size: cover !important;
-  background-attachment: scroll !important;
+  background-attachment: fixed !important;
   background-repeat: no-repeat;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -20,7 +20,7 @@
   }
   
   .page {
-    background-attachment: scroll !important;
+    background-attachment: fixed !important;
     min-height: -webkit-fill-available;
   }
 }
