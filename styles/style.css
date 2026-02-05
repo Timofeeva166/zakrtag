@@ -4,25 +4,12 @@
   align-items: center;
   font-family: var(--main-font), sans-serif;
   background: var(--background-gradient);
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--main-text-font-weight);
-}
-
-@supports (-webkit-touch-callout: none) {
-  body, html {
-    height: -webkit-fill-available;
-    min-height: -webkit-fill-available;
-  }
-  
-  .page {
-    background-attachment: fixed !important;
-    min-height: -webkit-fill-available;
-  }
 }
 
 .header {
