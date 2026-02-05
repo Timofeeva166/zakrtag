@@ -1,14 +1,16 @@
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: clamp(375px, calc(100vw * (700 / 1440)), 700px);
+  min-width: 375px;
+  margin: 100px auto;
   font-family: var(--main-font), sans-serif;
-  background: var(--background-gradient);
+  background: 
+    repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0px 2px, transparent 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
   font-variation-settings: 'wght' var(--main-text-font-weight);
-}
 
 .header {
   margin-block-start: 100px;
