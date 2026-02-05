@@ -1,0 +1,46 @@
+:root {
+  /* ШРИФТЫ */
+  --main-font: 'Inter';
+  --accent-font: 'PressStart2P';
+
+  /* ТИПОГРАФИКА */
+  --main-text-font-weight: 410;
+  --heading-font-weight: 715;
+  --accent-font-weight: 400;
+
+  /* РАЗМЕРЫ И НАСТРОЙКИ */
+  --inline-size: clamp(375px, 50vw, 700px);
+  --border-settings: 2px solid #000;
+
+  /* ЦВЕТА */
+  --icon-contour-color: #000;
+  --animation-fill-color: #FF0000;
+  --sparks-color: #FF0000;
+  --accent-color: #000;
+  --button-bg-color: #fff;
+  --button-text-color: #fff;
+  --overlay-color: #000;
+  --text-stroke-color: #fff;
+
+  /* ГРАДИЕНТ */
+  --background-gradient: 
+  repeating-linear-gradient(
+    to right,
+    #d3d3d3 0,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  linear-gradient(
+    to bottom,
+    #e7e7e7 0.01%,
+    #1a1a1a
+  );
+}
