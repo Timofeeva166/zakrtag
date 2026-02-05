@@ -22,6 +22,9 @@
   --overlay-color: #000;
   --text-stroke-color: #fff;
 
+  --background-image-lines: #d3d3d3;
+  --background-image: #e7e7e7, #1a1a1a;
+
   /* ГРАДИЕНТ */
   --background-gradient: 
   repeating-linear-gradient(90deg, black 0px 2px, rgba(0, 0, 0, 0) 2px 4px),

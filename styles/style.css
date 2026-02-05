@@ -1,27 +1,19 @@
 .page {
-  /* Размеры и позиционирование */
-  width: clamp(375px, calc(100vw * (700 / 1440)), 700px);
-  min-width: 375px;
-  margin: 100px auto;
-  
-  /* Стили */
-  font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--main-text-font-weight);
-  
-  /* ФОН: используем инлайн стиль для градиента */
-  /* Вместо переменной пишем явно */
-  background-image: 
-    repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
-    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  
-  background-position: center;
+  padding-block: 100px;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  background-color: var(--background-color);
+  background-image:
+    repeating-linear-gradient(to right, var(--background-image-lines) 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, var(--background-image-lines) 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, var(--background-image));
   background-size: cover;
-  background-attachment: fixed;
-  
-  /* Хак для iOS */
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+  font-family: var(--main-font);
+  color: var(--accent-color);
+}
+
+.page::-webkit-scrollbar {
+  display: none;
 }
 
 .header {
